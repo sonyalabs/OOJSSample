@@ -1,0 +1,29 @@
+#create {
+	display: none;
+}
+
+#remove {
+	display: none;
+}
+
+#display {
+	display: none;
+}
+
+#update {
+	display: none;
+}
+
+li {
+	cursor: pointer;
+}
+
+li span {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+}
+
+.empReg {
+	display: block;
+}

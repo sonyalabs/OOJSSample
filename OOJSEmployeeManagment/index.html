@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Employee Management</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div id="content">
+      <h1>Employee Management Portal</h1>
+      <p>
+        It is an internal company homepage where employees and HR team can access all HR related information. Employees can apply leave and clarify or complain issues related to HR
+      </p>
+      <h3>Main Fetures are:</h3>
+      <p>
+        <ul>
+          <li>Create new employee profile and enter company and personal information <span onclick="goToCreateEmployeeView()" >Create a new Employee</span></li>
+          <li>Display Employee details <span onclick="showEmpList()">Display Employee List</span></li>
+          <li>Update employee details as it changes <span>Modify Employee Detail</span></li>
+          <li>Remove Employees from the list <span>Remove Employees from list</span></li>
+        </ul>
+      </p>
+      
+    </div>
+    <div id="create">
+      <h3>Employee Registration</h3>           
+            <Form id="regForm" name="empReg" type="">
+              <p><label class="formfield">Employee name:</label>
+              <input type="text" name="empname" required ></p>
+              <p><label class="formfield">Age:</label>
+              <input type="text" name="age" required ></p>
+              <p><label class="formfield">Department:</label>
+              <input type="text" id="department" name="department" required ></p><br>
+              <input class="button" type="button" value="Add Employee" onclick="addEmployeeToList()">
+              <input class="button" type="button" value="Show All Employee" onclick="showAllEmployee()">
+            </Form>
+    </div>
+    <div id="update">
+      
+
+    </div>
+    <div id="display">
+      <table id="employeeTable">
+        <tr>
+          <th>Employee Id</th>
+          <th>Employee Name</th>
+          <th>Age of Employee</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+
+      </table>
+
+    </div>
+    <div id="remove">
+      
+    </div>
+
+  </body>
+  <script type="text/javascript" src="js/script.js"></script>
+</html>
